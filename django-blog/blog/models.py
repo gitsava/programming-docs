@@ -32,7 +32,6 @@ class Tag(models.Model):
     def __str__(self):
         return self.name
 
-
 class Article(models.Model):
     author = models.ForeignKey(
         Profile, on_delete=models.CASCADE, related_name='author')
